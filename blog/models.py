@@ -11,6 +11,7 @@ User = settings.AUTH_USER_MODEL
 class Tag(models.Model):
     # id = models.AutoField(primary_key=)
     value = models.CharField(max_length=100)
+    
 
     def __str__(self):
         return self.value
