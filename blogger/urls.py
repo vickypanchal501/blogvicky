@@ -17,6 +17,9 @@ from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path, include
 
+admin.site.site_header = "Blogger vicky"
+admin.site.site_title = 'Blogger'
+admin.site.site_url = 'Blogger'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",include("blog.urls"))
