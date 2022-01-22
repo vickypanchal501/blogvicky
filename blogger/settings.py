@@ -41,7 +41,8 @@ INSTALLED_APPS = [
 
     #name of application
     # 'blog.apps.BlogConfig.name'
-    'blog'
+    'account',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -85,7 +86,7 @@ DATABASES = {
     }
 }
 
-
+AUTH_USER_MODEL = 'account.CustomUser'
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
