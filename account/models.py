@@ -58,6 +58,7 @@ class CustomUser(AbstractBaseUser):
     staff = models.BooleanField(default=False) # a admin user; non super-user
     admin = models.BooleanField(default=False) # a superuser
 
+    objects = CustomUserManager()
     # notice the absence of a "Password field", that is built in.
 
     USERNAME_FIELD = 'email'
